@@ -20,7 +20,7 @@ let liEl = document.createElement("li");
 liEl = images
   .map(
     (element) =>
-      `<li class = image> <img src=${element.url} alt$=${element.alt} width = 320px /></li>`
+      `<li class = image> <img src=${element.url} alt=${element.alt} width = 320px /></li>`
   )
   .join(" ");
 ulEl.insertAdjacentHTML("beforeend", liEl);
